@@ -41,6 +41,14 @@ const (
 	OperatingModeCurrent   AttrID = 708    // aktuelle_betriebsart_r
 	FrostProtectionStatus  AttrID = 717    // zustand_frostgefahr_r
 	NoAttr                 AttrID = 0xffff // Used in error cases
+// additional attributes for solar collectors connected to Vitotrol via Vitosolic 100, and coil-tank
+	SolarCollectorTemp     AttrID = 0x1498 // temp_solar_kollektor_r
+	SolarCoilTankTemp      AttrID = 0x149c // temp_solar_speicher_r
+	SolarPumpStatus        AttrID = 0x149a // zustand_solarpumpe_r
+	SolarReloadRejection   AttrID = 0x1499 // zustand_solar_nachlade_r
+	SolarHoursRun          AttrID = 0x149d // info_solarstunden_r
+	SolarEnergy            AttrID = 0x149f // info_solarenergie_r - additional Heat Meter needed, otherwise always "0"
+	SolarControllerName    AttrID = 0x1c67 // konf_solarregler_r
 )
 
 // An AttrAccess defines attributes access rights.
